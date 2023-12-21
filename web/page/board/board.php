@@ -78,7 +78,7 @@ $board_sql = mq("select * from board order by idx desc limit $start, $posts_per_
             <tbody>
                 <tr>
                     <td><?php echo $board['idx']; ?></td>
-                    <td width="200"><a href="read.php?idx=<?php echo $board["idx"]; ?>"><?php echo $board["title"]; ?></a></td>
+                    <td width="200"><a href="/page/board/read.php?idx=<?php echo $board["idx"]; ?>"><?php echo $board["title"]; ?></a></td>
                     <td><?php echo $board['name'] ?></td>
                     <td><?php echo $board['date'] ?></td>
                 </tr>
